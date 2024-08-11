@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <p>Thala <span>7.</span></p>
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Brands<i class="fa-solid fa-angle-down"></i></li>
+                <li>More<i class="fa-solid fa-angle-down"></i></li>
+                <li>Contact</li>
+            </ul>
+            <div class="extra">
+                <div class="menu search">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="search">
+                </div>
+                <div class="mail">
+                    <i class="fa-regular fa-envelope-open"></i><span>0</span>
+                </div>
+                <div class="profile">
+                    <img src="assets/images/images.png" width="50px">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="left">
+                <p>Shopping Cart</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Seven By M.S Dhoni W...</td>
+                            <td id="quan"><span>-</span> 1 <span>+</span></td>
+                            <td>₹ 4,335</td>
+                            <td id="red">X</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="right">
+                <div class="box">
+                    <div class="coupon">
+                        <label for="coupon" id="coupon">Enter Coupon Code</label>
+                        <input type="text" name="coupon" id="coupon" placeholder="Coupon Code">
+                        <button id="coupon">Apply Coupon</button>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Sub Total</th>
+                            <td>₹ 4,700</td>
+                        </tr>
+                        <tr>
+                            <th>Taxes(if applicable)</th>
+                            <td>₹ 199</td>
+                        </tr>
+                        <tr>
+                            <th>Discount</th>
+                            <td>₹ 564</td>
+                        </tr>
+                        <tr>
+                            <th>Delivery Charge</th>
+                            <td>₹ 40</td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <td>₹ 4,375</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="btn">
+                    <button>Pay Now ₹4,375</button>
+                </div>
+                <div class="img">
+                    <img src="assets/images/securepay.avif" width="130px">
+                    <img src="assets/images/razorpay1.avif" width="120px">
+                    <img src="assets/images/secure.jpeg" width="130px">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="back">
+            <a href="../Product display/index.html">< Continue Shopping</a>
+        </div>
+    </footer>
+</body>
+
+</html>

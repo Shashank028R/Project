@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Display</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <p>Thala <span>7.</span></p>
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Brands<i class="fa-solid fa-angle-down"></i></li>
+                <li>More<i class="fa-solid fa-angle-down"></i></li>
+                <li>Contact</li>
+            </ul>
+            <div class="extra">
+                <div class="menu search">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="search">
+                </div>
+                <div class="mail">
+                    <i class="fa-regular fa-envelope-open"></i><span>0</span>
+                </div>
+                <div class="profile">
+                    <img src="assets/images/images.png" width="50px">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="location">
+            <p>Home > THALA FOR A REASON > Seven By M.S Dhoni Women's Hogun Multi-Color Running Shoes</p>
+        </div>
+        <div class="hero">
+            <div class="left">
+                <div class="img_container">
+                    <div class="contain">
+                        <img src="assets/images/img1.jpg" id="mainImage" width="">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <p>Seven By M.S.Dhoni
+                    Women's Hogun Multi-Color
+                    Running Shoes
+                </p>
+                <p>
+                    For exceptional fit, feel and smooth transitions, get going with these dual midsole technology shoes
+                    constructed with molded EVS sock liner, gel at heel area, rubber outsole, fused upper and
+                    breathable...
+                </p>
+                <div class="amount">
+                    <div class="price">₹ 4,335</div>
+                    <div class="sale">Save 12% <span>inclusive of all Taxes</span></div>
+                </div>
+                <div class="buy">
+                    <select name="quantity" id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <button type="submit" onclick="window.location.href='../Cart/index.html';">
+                        <i class="fa-solid fa-cart-shopping"></i> ADD TO CART
+                      </button>                      
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="img_container">
+                <div class="img">
+                    <img src="assets/images/img1.jpg" class="footer-img" width="300px">
+                </div>
+                <div class="img">
+                    <img src="assets/images/img4.jpg" class="footer-img" width="300px">
+                </div>
+                <div class="img">
+                    <img src="assets/images/img5.jpg" class="footer-img" width="300px">
+                </div>
+                <div class="img">
+                    <img src="assets/images/img6.jpg" class="footer-img" width="300px">
+                </div>
+                <div class="img">
+                    <img src="assets/images/img7.jpg" class="footer-img" width="300px">
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const mainImage = document.getElementById('mainImage');
+            if (!mainImage) {
+                console.error('Main image not found');
+                return;
+            }
+            const footerImages = document.querySelectorAll('.footer-img');
+            footerImages.forEach(img => {
+                img.addEventListener('click', function() {  
+                    mainImage.src = this.src;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

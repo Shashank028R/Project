@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+}
+ul{
+    display: flex;
+    gap: 3vw;
+}
+li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    cursor: pointer;
+    color: rgba(128, 128, 128, 0.902);
+    transition: transform 0.2s ease;
+}
+li:hover{
+    color: black;
+    transform: scale(1.1);
+}
+li i{
+    margin-top: 2px;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 900;
+    color: orange;
+}
+.logo span{
+    color: blue;
+}
+.extra{
+    display: flex;
+    gap: 20px;
+    color: rgba(128, 128, 128, 0.902);
+}
+.extra input{
+    border: none;
+}
+.extra input:focus{
+    outline: none;
+}
+.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.902);
+    height: 40px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.profile{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.profile img{
+    border-radius: 50%;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+}
+.mail i{
+    color: rgba(0, 85, 255, 0.872);
+}
+.search{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.902);
+    padding: 3px 10px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+}
+.menu{
+    display: none;
+}
+main{
+    width: 90vw;
+    margin: auto;
+    height: 80vh;
+}
+.hero
+{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+.left,.right{
+    width: 50%;
+}
+.left p{
+    font-size: 48px;
+    font-weight: 600;
+}
+.left table{
+    width: 100%;
+    border: none;
+}
+.sepration_line{
+    height: 5px;
+    width: 100%;
+    background-color: grey;
+}
+.left table th,td{
+    text-align: start;
+    padding: 15px 10px;
+}
+.left table th{
+    border-bottom: 2px solid rgba(180, 179, 179, 0.805);
+    color: rgba(158, 158, 158, 0.921);
+}
+#red{
+    color: red;
+    cursor: pointer;
+}
+#red:active{
+    color: rgba(255, 0, 0, 0.504);
+}
+#quan span{
+    cursor: pointer;
+}
+#quan span:active{
+    color: rgba(0, 0, 0, 0.492);
+}
+.right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.right label{
+    display: block;
+    margin-left: 5px;
+    color: rgb(21, 24, 52);
+}
+.right input{
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid rgba(158, 158, 158, 0.921);
+}
+.coupon> button{
+    padding: 18px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    background-color: #1396fbe3;
+    box-shadow: 2px 5px 8px rgba(0,0,0,0.2);
+}
+.coupon> button:active{
+    box-shadow: none;
+    background-color: #1396fb83;
+}
+.box{
+    border: 2px solid rgba(128, 128, 128, 0.212);
+    width: 60%;
+    padding: 15px;
+    border-radius: 20px 30px;
+    margin-top: 50px;
+}
+.box table{
+    width: 100%;
+}
+.box table th{
+    text-align: start;
+}
+.box table td{
+    text-align: end;
+}
+.box table tr{
+    font-size: 15px;
+}
+.box table tr:last-child{
+    color: rgb(21, 24, 52);
+    font-size: 20px;
+    font-weight: 900;
+}
+.btn{
+    width: 60%;
+}
+.btn button{
+    width: 100%;
+    cursor: pointer;
+    padding: 18px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 176, 4, 0.84);
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 4px 8px 8px rgba(0,0,0,0.2);
+    border: 0;
+}
+.btn button:active{
+    box-shadow: none;
+    background-color: rgba(255, 176, 4, 0.373);
+}
+.img{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    width: 90vw;
+    margin: auto;
+    font-size: 32px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
