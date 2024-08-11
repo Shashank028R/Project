@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f1f2f4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+header{
+    background-color: #fff;
+    padding: 10px 15px;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+nav,.login,.cart,.seller,.menu,.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav,.options{
+    gap: 30px;
+
+}
+nav> .search> input{
+    border: 0;
+    background-color: transparent;
+    width: 96%;
+    font-size: 18px;
+    outline: 0;
+    height: 100%;
+}
+.search{
+    width: 100%;
+    max-width: 800px;
+    background-color: #f1f5ff;
+    padding: 10px 15px;
+    border-radius: 12px;
+}
+.login{
+    padding: 10px 15px;
+    height: 25px;
+    border-radius: 10px;
+    gap: 8px;
+    cursor: pointer;
+    transition: all .2s ease;
+
+}
+.login> svg{
+    transition: all .3s ease;
+
+}
+.login:hover{
+    background-color: #2a55e5;
+    color: white;
+}
+.login:hover svg path{
+    stroke: white;
+
+}
+.login:hover svg:nth-of-type(2){
+    transform: rotate(180deg);
+}
+.cart,.seller{
+    cursor: pointer;
+    gap: 8px;
+}
+.menu{
+    padding: 7px 7px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.menu:hover{
+    border: 1px solid rgba(128, 128, 128, 0.347);
+    background-color:rgba(210, 209, 209, 0.099);
+    cursor: pointer;
+}
+.options> .card{
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.options> .card:hover{
+    transform: scale(1.1);
+}
+
+.options> .card> p{
+    margin: 0;
+    font-weight: 450;
+    font-size: 13px;
+}
+.container{
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+}
+.options{
+    background-color: #fff;
+    margin: 10px auto;
+    gap: 50px;
+    padding: 15px 0;
+}
+section.poster {
+    position: relative; /* Ensure the parent has positioning context */
+    width: 100%;
+    height: 265px;
+    overflow: hidden;
+}
+
+section.poster > img {
+    z-index: -10;
+    position: absolute;
+}
+
+section.poster > .back,
+section.poster > .forward {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    cursor: pointer;
+}
+
+section.poster > .back {
+    left: 0;
+}
+
+section.poster > .forward {
+    right: 0;
+}
+section.poster > .back,
+section.poster > .forward {
+    background-color: white;
+    padding: 35px 15px;
+}
+section.poster > .back {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+section.poster > .forward {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: -2px 2px 5px rgba(0,0,0,0.2);
+
+}
+section.mobile{
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 15px;
+
+}
+section.mobile> .headline{
+    display: flex;
+    justify-content: space-between;
+}
+.headline p{
+    font-size: 20px;
+    font-weight: 500;
+}
+section.mobile> .headline i{
+    border: 1px solid #2a56e6;
+    background-color: #2a56e6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+section.mobile > .card-container .card > .img-container {
+    width: 186px;
+    height: 186px;
+    overflow: hidden; /* Ensures the image doesn't overflow */
+}
+
+section.mobile > .card-container .card > .img-container img {
+    width: 100%; /* Ensures the image covers the container width */
+    height: 100%; /* Ensures the image covers the container height */
+    object-fit: contain; /* Ensures the image covers the container while maintaining its aspect ratio */
+}
+section.mobile > .card-container .card{
+    width: 200px;
+    height: 252px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+section.mobile > .card-container .card p:nth-child(3){
+    font-weight: 600;
+}
+
+section.mobile > .card-container .card:hover{
+    transform: scale(1.05);
+    border: 1px solid transparent;
+}
+
+section.mobile > .card-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+    margin-top: 30px;
+    overflow-y: hidden;
+}
+section.deals{
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+section.deals> .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+section.deals> .card-wrapper .card{
+    cursor: pointer;
+    transition: all .3s ease;
+}
+section.deals> .card-wrapper .card:hover{
+    transform: scale(1.01);
+}
+section.brand{
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+}
+section.brand .headline p{
+    padding: 14px;
+}
+section.brand> .card-container{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+    padding: 4px;
+}
+section.brand> .card-container .card{
+    cursor: pointer;
+}
+section.poster2 {
+    margin-top: 10px;
+    overflow: hidden;
+}
+section.details{
+    background-color: #f5f5f5;
+    padding: 60px 30px;
+}
+section.details .text{
+    margin-bottom: 20px;
+}
+section.details .text p span:first-child{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(135, 137, 150);
+    display: block;
+}
+section.details .text p span:nth-child(2){
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(135, 137, 150);
+}
+footer{
+    position: relative;
+    min-height: 324px;
+    height: 100%;
+    background-color: rgb(33, 33, 33);
+}
+section.links> .card{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+}
+section.links> .card p{
+    color: #878787;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+section.links> .social a{
+    display: flex;
+    flex-direction: row;
+}
+.mail .social img {
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.mail .social img:hover {
+    transform: scale(1.1);
+}
+
+
+
+section.links a{
+    text-decoration: none;
+    color: #fff;
+}
+section.links a:hover{
+    text-decoration: underline;
+}
+section.links .address a:hover,
+section.links .mail a:hover{
+    text-decoration: none;
+}
+section.links .address a,
+section.links .mail a{
+    cursor: default;
+}
+
+section.links{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding: 50px;
+}
+.social{
+    margin: 10px 0;
+}
+.mail{
+    padding-left: 25px;
+    border-left: 1px solid #454d5e;
+}
+.sepration-line{
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    background-color: #454d5e;
+    left: 0;
+}
+
+.last{
+    display: flex;
+    padding: 20px 150px;
+    justify-content: space-between;
+}
+.last> .card{
+    display: flex;
+    gap: 10px;
+}
+.last> .card> p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+}
